@@ -128,7 +128,7 @@ def get_and_save_remote_text():
         longest_string = max(text_nodes, key=len)
         page_contents.append(longest_string)
 
-    with open(FILE_NAME, 'w') as file:
+    with open(FILE_NAME, 'w+') as file:
         file.write("\n".join(page_contents))
 
 
